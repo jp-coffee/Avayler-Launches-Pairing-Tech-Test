@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   * {
+      box-sizing: border-box;
+      @apply font-roboto;
+   }
+
+   body {
+      @apply min-h-screen max-w-screen overflow-x-hidden;
+      @apply bg-spacex-white dark:bg-spacex-black text-spacex-dark-grey dark:text-spacex-grey;
+   }
+   .container {
+      @apply mx-auto max-w-[1800px] xl:max-w-[1300px] lg:max-w-[1000px] md:max-w-[700px] sm:max-w-[500px];
+   }
+}

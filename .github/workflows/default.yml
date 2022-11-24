@@ -1,0 +1,29 @@
+name: Actions
+
+on: [push]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    name: Eslint
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+      - name: npm install
+        run: npm ci
+      - name: npm run lint
+        run: npm run lint
+  vitest:
+    runs-on: ubuntu-latest
+    name: Vitest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+      - name: npm install
+        run: npm ci
+      - name: npm run test
+        run: npm run test

@@ -1,0 +1,15 @@
+{
+   "root": true,
+   "extends": ".lint",
+   "env": {
+      "browser": false,
+      "es2020": false,
+      "node": true,
+      "jest": true
+   },
+   "overrides": [
+      {
+         "files": ["**/*.{ts,tsx}", "pages/**/*.{ts,tsx}", "utils/**/*.{ts,tsx}"]
+      }
+   ]
+}
