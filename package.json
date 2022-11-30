@@ -7,7 +7,8 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "eslint . --ext .ts -f=pretty",
-		"test": "vitest"
+		"test": "vitest",
+		"test-jest": "jest"
 	},
 	"dependencies": {
 		"dayjs": "^1.11.6",
@@ -17,6 +18,7 @@
 		"react-tooltip": "^4.5.1"
 	},
 	"devDependencies": {
+		"@types/jest": "^29.2.3",
 		"@types/node": "^18.7.18",
 		"@types/react": "^18.0.20",
 		"@types/react-dom": "^18.0.6",
@@ -29,9 +31,11 @@
 		"eslint-formatter-pretty": "^4.1.0",
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-prettier": "^4.2.1",
+		"jest": "^29.3.1",
 		"postcss": "^8.4.16",
 		"prettier": "^2.7.1",
 		"tailwindcss": "^3.1.8",
+		"ts-jest": "^29.0.3",
 		"typescript": "^4.8.3",
 		"vite": "^3.1.0",
 		"vitest": "^0.23.2"

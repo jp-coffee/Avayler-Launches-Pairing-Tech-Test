@@ -3,7 +3,7 @@ name: Actions
 on: [push]
 
 jobs:
-  eslint:
+  linting:
     runs-on: ubuntu-latest
     name: Eslint
     steps:
@@ -15,9 +15,9 @@ jobs:
         run: npm ci
       - name: npm run lint
         run: npm run lint
-  vitest:
+  tests:
     runs-on: ubuntu-latest
-    name: Vitest
+    name: Testing
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -27,3 +27,5 @@ jobs:
         run: npm ci
       - name: npm run test
         run: npm run test
+      - name: npm run test-jest
+        run: npm run test-jest
